@@ -18,9 +18,7 @@ class Solution:
                     area = (area // bound + 1) * height
                     bound = height
 
-                if area > max_area:
-                    max_area = area
-
+                max_area = max(max_area, area)
                 areas.append((area, bound))
 
             stack = areas
