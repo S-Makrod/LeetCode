@@ -2,8 +2,6 @@ from typing import List
 
 class Solution:
     def islandsAndTreasure(self, grid: List[List[int]]) -> None:
-        LAND = 2147483647
-        WATER = -1
         TREASURE = 0
 
         def dfs(i, j, dist):
