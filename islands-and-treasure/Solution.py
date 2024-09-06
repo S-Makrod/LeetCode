@@ -6,8 +6,6 @@ class Solution:
         WATER = -1
         TREASURE = 0
 
-        treasureMap = [[float('inf')]*len(grid[0]) for _ in range(len(grid))]
-
         def dfs(i, j, dist):
             if i not in range(len(grid)) or j not in range(len(grid[0])) or grid[i][j] < dist:
                 return
