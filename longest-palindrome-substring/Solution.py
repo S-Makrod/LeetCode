@@ -14,7 +14,6 @@ class Solution:
             return res
 
         res = ""
-        resLen = 0
 
         for i in range(len(s)):
             pal = palindromeLength(i, i)
